@@ -15,7 +15,7 @@ CustomerValidator.prototype.validate = function () {
         this.errors.push("Customer document is a required field");
     }
 
-    if (address.street.length < 3) {
+    if (address.street.length < 1) {
         this.errors.push("Invalid address");
     }
 }
