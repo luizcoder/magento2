@@ -5,7 +5,7 @@ var CustomerValidator = function (addressObject) {
 
 CustomerValidator.prototype.validate = function () {
     var address = this.addressObject;
-
+    console.log("Address", address);
     if (address == null) {
         this.errors.push("Customer address is required");
         return;
