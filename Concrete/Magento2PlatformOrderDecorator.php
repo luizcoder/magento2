@@ -1178,7 +1178,7 @@ class Magento2PlatformOrderDecorator extends AbstractPlatformOrderDecorator
     {
         if (
             !is_array($allStreetLines) ||
-            count($allStreetLines) < 3
+            count($allStreetLines) < 1
         ) {
             $message = "Invalid address. Please fill the street lines and try again.";
             $ExceptionMessage = $this->i18n->getDashboard($message);
